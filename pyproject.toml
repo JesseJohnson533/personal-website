@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "personal-website"
+version = "0.1.0"
+description = "Personal Portfolio Website"
+authors = ["JesseJohnson533 <johnsonjd1995@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+requests = "^2.32.3"
+flask = "^3.1.0"
+pytest = "^8.3.4"
+redis = "^5.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
