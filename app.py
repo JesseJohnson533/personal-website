@@ -1,7 +1,3 @@
-from flask import Flask
+from website import create_app
 
-app = Flask(__name__)
-
-@app.route('/')
-def index():
-    return 'TESTING'
+application = create_app()
