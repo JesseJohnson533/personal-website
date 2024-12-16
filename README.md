@@ -2,4 +2,7 @@
 
 Personal website
 
-Update
+Heroku Buildpacks:
+
+-   heroku/python
+-   heroku/nodejs
