@@ -10,4 +10,4 @@ Heroku Buildpacks:
 Local Development:
 - Open in devcontainer
 - Run `pip install -r requirements.txt`
-- Run flask run --debug
+- Run `flask run --debug`

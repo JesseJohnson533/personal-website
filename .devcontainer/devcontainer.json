@@ -6,7 +6,7 @@
     "build": {
         // Path is relative to the devcontainer.json file.
         "dockerfile": "../Dockerfile"
-    }
+    },
     // Features to add to the dev container. More info: https://containers.dev/features.
     // "features": {},
 
@@ -17,7 +17,17 @@
     // "postCreateCommand": "uname -a",
 
     // Configure tool-specific properties.
-    // "customizations": {},
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "njpwerner.autodocstring",
+                "batisteo.vscode-django",
+                "GitHub.copilot",
+                "glenn2223.live-sass"
+            ]
+        }
+    }
 
     // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
     // "remoteUser": "root"

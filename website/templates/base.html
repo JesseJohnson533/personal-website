@@ -14,11 +14,11 @@
             rel="stylesheet"
         />
     </head>
-    <body class="d-flex flex-column h-100">
-        <header id="pageHeader" class="position-absolute w-100">
-            {% include "nav_bar.html" %}
+    <body>
+        <header>
+            {% block header %} {% endblock %}
         </header>
-        <main class="flex-shrink-0 pt-6">
+        <main>
             {% block content %} {% endblock %}
         </main>
     </body>
