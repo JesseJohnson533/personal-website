@@ -9,3 +9,19 @@ RUN apk add --no-cache \
     npm \
     git \
     gnupg
+
+# Install the latest version of pip
+RUN python -m pip install --upgrade pip
+
+# Copy
+COPY requirements.txt /app/requirements.txt
+COPY package.json /app/package.json
+COPY package-lock.json /app/package-lock.json
+
+WORKDIR /app
+
+RUN pip install -r requirements.txt
+RUN npm install
+
+# Run flask on debug mode and port 5000
+CMD ["flask", "run", "--debug"]

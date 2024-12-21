@@ -1,2 +1,27 @@
-$primary: #007bff;
-$secondary: #6c757d;
+@use "custom";
+
+@use '../components/animations';
+@use '../components/buttons';
+@use '../components/mixins';
+@use '../components/typography';
+
+@use '../sections/footer';
+@use '../sections/intro';
+@use '../sections/navbar';
+
+// General
+body {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2,2,10);
+    background: linear-gradient(90deg, rgba(2,2,10,1) 0%, rgba(5,32,74,1) 50%, rgba(2,2,10,1) 100%); 
+}
+
+.center {
+    width: auto;
+    height: auto;
+    padding: 1rem;
+}

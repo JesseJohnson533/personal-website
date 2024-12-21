@@ -1,0 +1,5 @@
+@use "../css/custom" as *;
+
+@mixin left_right_gradient {
+    background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.85), rgba($black, 0.99));
+}

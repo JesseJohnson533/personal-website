@@ -1,0 +1,15 @@
+@use "../css/custom" as *;
+@use "../components/mixins" as *;
+
+.menu {
+    background: #BFACAA;
+    li {
+        padding: 0 0.5rem;
+
+        a {
+            color: $white;
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+    }
+}
