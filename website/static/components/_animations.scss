@@ -1,16 +1,52 @@
 @use "../css/custom" as *;
 
-@keyframes fade-in-up {
-    0% {
-      transform: translateY(100%);
+@keyframes fadeIn {
+  0% {
       opacity: 0;
-    }
-    100% {
-      transform: translateY(0%);
+  }
+  100% {
       opacity: 1;
-    }
   }
+}
+.home-animated-fade-in {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
 
-  .animated-fade-in-up {
-    animation: 1.5s fade-in-up;
+.home-animated-fade-in-2 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 2.5s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.home-animated-fade-in-3 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 2.5s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+/* Fade-in-up animation */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(100%); 
   }
+  100% {
+      opacity: 1;
+      transform: translateY(0%);
+  }
+}
+.home-animated-fade-in-up {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 5s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}

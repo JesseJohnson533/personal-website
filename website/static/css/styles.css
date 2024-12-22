@@ -11973,18 +11973,55 @@ textarea.form-control-lg {
   color: #B497D6;
 }
 
-@keyframes fade-in-up {
+@keyframes fadeIn {
   0% {
-    transform: translateY(100%);
     opacity: 0;
   }
   100% {
-    transform: translateY(0%);
     opacity: 1;
   }
 }
-.animated-fade-in-up {
-  animation: 1.5s fade-in-up;
+.home-animated-fade-in {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.home-animated-fade-in-2 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 2.5s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.home-animated-fade-in-3 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 2.5s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+/* Fade-in-up animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.home-animated-fade-in-up {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 5s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
 }
 
 .footer {
@@ -12017,10 +12054,8 @@ textarea.form-control-lg {
 }
 
 .menu {
-  background: #BFACAA;
-}
-.menu li {
-  padding: 0 0.5rem;
+  background: rgb(2, 2, 10);
+  background: linear-gradient(90deg, rgb(2, 2, 10) 0%, rgb(5, 32, 74) 50%, rgb(2, 2, 10) 100%);
 }
 .menu li a {
   color: #fff;
@@ -12028,14 +12063,25 @@ textarea.form-control-lg {
   font-weight: 500;
 }
 
+.navbar-external-links {
+  padding: 0.25rem 0.75rem;
+}
+.navbar-external-links a img {
+  height: 30px;
+  width: 36px;
+}
+
 body {
+  background: rgb(2, 2, 10);
+  background: linear-gradient(90deg, rgb(2, 2, 10) 0%, rgb(5, 32, 74) 50%, rgb(2, 2, 10) 100%);
+}
+
+main {
   width: auto;
-  height: 100vh;
+  height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(2, 2, 10);
-  background: linear-gradient(90deg, rgb(2, 2, 10) 0%, rgb(5, 32, 74) 50%, rgb(2, 2, 10) 100%);
 }
 
 .center {

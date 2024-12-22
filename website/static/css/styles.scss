@@ -1,23 +1,25 @@
 @use "custom";
 
-@use '../components/animations';
-@use '../components/buttons';
-@use '../components/mixins';
-@use '../components/typography';
+@use '../components/animations' as *;
+@use '../components/buttons' as *;
+@use '../components/mixins' as *;
+@use '../components/typography' as *;
 
-@use '../sections/footer';
-@use '../sections/intro';
-@use '../sections/navbar';
+@use '../sections/footer' as *;
+@use '../sections/intro' as *;
+@use '../sections/navbar' as *;
 
 // General
 body {
+    @include mixin-background;
+}
+
+main {
     width: auto;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(2,2,10);
-    background: linear-gradient(90deg, rgba(2,2,10,1) 0%, rgba(5,32,74,1) 50%, rgba(2,2,10,1) 100%); 
 }
 
 .center {
