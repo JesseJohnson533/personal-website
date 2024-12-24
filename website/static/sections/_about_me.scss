@@ -1,0 +1,21 @@
+@use "../css/custom" as *;
+
+.about-me {
+    margin-bottom: 1rem;
+    color: white;
+
+    &--title {
+        display: inline-block;
+        font-weight: 700;
+    }
+    &--description {
+        font-size: 1rem;
+        display: block;
+    }
+}
+
+.headshot {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

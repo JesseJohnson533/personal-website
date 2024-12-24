@@ -8,22 +8,19 @@
 @use '../sections/footer' as *;
 @use '../sections/intro' as *;
 @use '../sections/navbar' as *;
+@use '../sections/portfolio' as *;
+@use '../sections/contact' as *;
+@use '../sections/about_me' as *;
 
 // General
 body {
     @include mixin-background;
 }
 
-main {
-    width: auto;
-    height: 95vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.center {
-    width: auto;
-    height: auto;
-    padding: 1rem;
-}
+//main {
+    //width: auto;
+    //height: 95vh;
+    //display: flex;
+    //
+    //justify-content: center;
+//}

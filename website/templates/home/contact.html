@@ -3,22 +3,22 @@
 {% include "navbar.html" %}
 
 {% block content %}
-<div class="container contact-me">
-    <h1 class="text-white">Contact Me</h1>
-        <div class="text-white mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="email" class="form-control" id="name" placeholder="John Doe">
-        </div>
-        <div class="text-white mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com">
-        </div>
-        <div class="text-white mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="3"></textarea>
-        </div>
-        <div class="d-grid gap-2">
-            <button id=submit-contact-info class="btn btn-secondary" type="button">Send</button>
-        </div>
+<div class="d-flex flex-column mb-3 p-1 w-75 mx-auto">
+    <h1 class="text-white text-center">Contact Me</h1>
+    <div class="text-white mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="email" class="form-control" id="name" placeholder="John Doe">
+    </div>
+    <div class="text-white mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+    </div>
+    <div class="text-white mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+    </div>
+    <div class="d-grid gap-2">
+        <button id=submit-contact-info class="btn btn-secondary" type="button">Send</button>
+    </div>
 </div>
 {% endblock %}

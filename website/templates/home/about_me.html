@@ -3,11 +3,53 @@
 {% include "navbar.html" %}
 
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h1>About Me</h1>
+<div class="container-fluid mt-5 p-3 w-75 mx-auto">
+    <div class="row align-items-center text-white">
+        <div class="col-md-6 about-me">
+            <h1 class="about-me--title">Hello!</h1>
+            <p class="about-me--description">
+                My name is Jesse Johnson. 
+                I am a dedicated and versatile professional with a strong foundation in software development and a passion for continuous growth. 
+                My technology career is complemented by a decade of restaurant experience, during which I honed invaluable soft skills such as communication, teamwork, and adaptability.
+            </p>
+            <p class="about-me--description">I seek my next opportunity to contribute my skills and grow within a dynamic team. My technical toolkit includes:
+            </p>
+            <ul class="about-me--description">
+                <li>Languages: Python, Java, SQL, C, Ruby, JavaScript, HTML, CSS, Kotlin, Lisp</li>
+                <li>Frameworks: Pytest, Selenium, Playwright, Locust, Flask, Ruby on Rails, Bootstrap</li>
+                <li>Platforms: Databricks, GCP, AWS, Heroku</li>
+                <li>Specialties: Software testing and automation</li>
+            </ul>
+            <p class="about-me--description">
+                If you are looking for a results-driven individual who combines technical expertise with strong interpersonal skills, I would love to connect and explore how I can add value to your team.
+            </p>
+        </div>
+        <div class="col-md-6 text-end">
+            <div>
+                <img
+                    class="rounded-circle img-thumbnail img-fluid headshot"
+                    src="{{url_for('static', filename='images/headshot.jpg')}}"
+                    alt="Jesse Johnson"
+                />
+            </div>
         </div>
     </div>
 </div>
+
+<!--
+<div class="container-fluid px-4 text-center">
+    <div class="row gx-5">
+        <div class="col p-2 flex-grow-1 justify-content-left">
+            <h1>Hello!</h1>
+            <p>This is the part where I introduce myself</p>
+        </div>
+        <div class="col p-2">
+            <img
+                class="rounded-circle img-thumbnail headshot"
+                src="{{url_for('static', filename='images/headshot.jpg')}}"
+                alt="Jesse Johnson"
+            />
+        </div>
+    </div>
+</div>-->
 {% endblock %}

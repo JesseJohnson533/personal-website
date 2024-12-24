@@ -1,29 +1,10 @@
 @use "../css/custom" as *;
-@use "../components/animations" as *;
 
 
 //.home-animation {
  //   @include animated-fade-in-up;
 
 //}
-
-.home-center {
-    margin: auto;
-    position: relative;
-    text-align: center;
-    color: $white !important;
-    justify-self: center;
-
-    h2 {
-        font-weight: 750;
-    }
-    p {
-        font-weight: 350;
-    }
-    a {
-        font-weight: 450;
-    }
-}
 
 .external-links {
     padding: 1rem 1rem;
@@ -32,5 +13,20 @@
             height: 30px;
             width: 36px;
         }
+    }
+}
+
+.home {
+    color: $white !important;
+    text-align: center;
+    height: 95vh;
+    h2 {
+        font-weight: 750;
+    }
+    p {
+        font-weight: 350;
+    }
+    a {
+        font-weight: 450;
     }
 }

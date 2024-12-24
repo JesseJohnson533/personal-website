@@ -12028,29 +12028,27 @@ textarea.form-control-lg {
   color: #fff;
 }
 
-.home-center {
-  margin: auto;
-  position: relative;
-  text-align: center;
-  color: #fff !important;
-  justify-self: center;
-}
-.home-center h2 {
-  font-weight: 750;
-}
-.home-center p {
-  font-weight: 350;
-}
-.home-center a {
-  font-weight: 450;
-}
-
 .external-links {
   padding: 1rem 1rem;
 }
 .external-links a img {
   height: 30px;
   width: 36px;
+}
+
+.home {
+  color: #fff !important;
+  text-align: center;
+  height: 95vh;
+}
+.home h2 {
+  font-weight: 750;
+}
+.home p {
+  font-weight: 350;
+}
+.home a {
+  font-weight: 450;
 }
 
 .menu {
@@ -12071,21 +12069,43 @@ textarea.form-control-lg {
   width: 36px;
 }
 
-body {
-  background: rgb(2, 2, 10);
-  background: linear-gradient(90deg, rgb(2, 2, 10) 0%, rgb(5, 32, 74) 50%, rgb(2, 2, 10) 100%);
-}
-
-main {
-  width: auto;
-  height: 95vh;
-  display: flex;
+.portfolio-card-box {
+  background: #B497D6;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgb 0 0 0/11%;
   align-items: center;
   justify-content: center;
 }
 
-.center {
-  width: auto;
+.portfolio-card-wrapper {
+  margin: auto;
+  position: relative;
+  text-align: center;
+  color: #fff !important;
+  justify-self: center;
+}
+
+.about-me {
+  margin-bottom: 1rem;
+  color: white;
+}
+.about-me--title {
+  display: inline-block;
+  font-weight: 700;
+}
+.about-me--description {
+  font-size: 1rem;
+  display: block;
+}
+
+.headshot {
+  display: block;
+  max-width: 100%;
   height: auto;
-  padding: 1rem;
+}
+
+body {
+  background: rgb(2, 2, 10);
+  background: linear-gradient(90deg, rgb(2, 2, 10) 0%, rgb(5, 32, 74) 50%, rgb(2, 2, 10) 100%);
 }/*# sourceMappingURL=styles.css.map */
