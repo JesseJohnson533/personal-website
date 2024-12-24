@@ -1,3 +1,4 @@
+import json
 from flask import Blueprint, render_template, request
 from .utils import *
 from .__init__ import send_email
@@ -16,21 +17,22 @@ def about_me():
 def portfolio():
     return render_template("home/portfolio.html")
 
-@bp.route("/contact")
+@bp.route("/contact", methods=["GET", "POST"])
 def contact():
-
     if request.method == "POST":
+        response = request.get_json()
         contact_form = {}
         try:
-            if request.form["name"] == "" or request.form["email"] == "" or request.form["message"] == "":
-                return render_template("home/contact.html", error=True)
+            if response.form["name"] == "" or response.form["email"] == "" or response.form["subject"] == "" or response.form["message"] == "":
+                return {"success": 0}
             contact_form["name"] = request.form["name"]
             contact_form["email"] = request.form["email"].replace(" ", "").lower()
+            contact_form["subject"] = request.form["subject"]
             contact_form["message"] = request.form["message"]
             send_email(contact_form)
         except:
-            return render_template("home/contact.html", error=True)
-        return render_template("home/contact.html", success=True)
+            return {"success": 0}
+        return {"success": 1}
 
     return render_template("home/contact.html")
 

@@ -5,20 +5,66 @@
 {% block content %}
 <div class="d-flex flex-column mb-3 p-1 w-75 mx-auto">
     <h1 class="text-white text-center">Contact Me</h1>
-    <div class="text-white mb-3">
-        <label for="name" class="form-label">Name</label>
-        <input type="email" class="form-control" id="name" placeholder="John Doe">
+    <form id="contact-form">
+        <div class="text-white mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="John Doe">
+        </div>
+        <div class="text-white mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="text-white mb-3">
+            <label for="name" class="form-label">Subject:</label>
+            <input type="text" class="form-control" id="subject" placeholder="Let's Chat">
+        </div>
+        <div class="text-white mb-3">
+            <label for="message" class="form-label">Message:</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <div class="d-grid gap-2">
+            <button id=submit-contact-info class="btn btn-secondary" type="submit">Send</button>
+        </div>
+    </form>
+    <div id="success" class="alert alert-success" role="alert" style="display:none;">
+        Success! Please allow 2-3 business days for a response.
     </div>
-    <div class="text-white mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="name@example.com">
-    </div>
-    <div class="text-white mb-3">
-        <label for="message" class="form-label">Message</label>
-        <textarea class="form-control" id="message" rows="3"></textarea>
-    </div>
-    <div class="d-grid gap-2">
-        <button id=submit-contact-info class="btn btn-secondary" type="button">Send</button>
+    <div id="error" class="alert alert-danger" role="alert" style="display:none;">
+        Error. Please try again.
     </div>
 </div>
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var request = new XMLHttpRequest();
+        request.open("POST", "/contact", true);
+        request.setRequestHeader("Content-Type", "application/json");
+
+        request.onreadystatechange = function() {
+            if (request.readyState === 4) {
+                if (request.status === 200) {
+                    var data = JSON.parse(request.response);
+                    console.log(data)
+                    if (data.success == 1) {
+                        document.getElementById("success").style.display = "block";
+                    }
+                    else {
+                        document.getElementById("error").style.display = "block";
+                    }
+                } else {
+                    document.getElementById("error").style.display = "block";
+                }
+            }
+        };
+
+        var data = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value
+        };
+
+        request.send(JSON.stringify(data));
+    });
+</script>
 {% endblock %}

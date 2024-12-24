@@ -27,7 +27,7 @@ def create_app():
 def send_email(contact_form):
     try:
         message = Message(
-            subject=f"PERSONAL WEBSITE MAIL - {contact_form['name']}", 
+            subject=f"PERSONAL WEBSITE MAIL - {contact_form['name']} - {contact_form['subject']}", 
             sender=contact_form["email"], 
             recipients=["jesse.d.johnson.533@gmail.com"]
         )
