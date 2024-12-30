@@ -19,16 +19,16 @@
 .home-animated-fade-in-2 {
   opacity: 0;
   animation-name: fadeIn;
-  animation-duration: 2.5s;
-  animation-delay: 2.5s;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
 
 .home-animated-fade-in-3 {
   opacity: 0;
   animation-name: fadeIn;
-  animation-duration: 2.5s;
-  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -46,7 +46,7 @@
 .home-animated-fade-in-up {
   opacity: 0;
   animation-name: fadeInUp;
-  animation-duration: 5s;
-  animation-delay: 5s;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
   animation-fill-mode: forwards;
 }
