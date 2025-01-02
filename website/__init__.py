@@ -14,9 +14,9 @@ def create_app():
     app.config['MAIL_PORT'] = 587
     app.config['MAIL_USE_TLS'] = True
     app.config['MAIL_USE_SSL'] = False
-    app.config['MAIL_USERNAME'] = "jesse.d.johnson.533@gmail.com"
-    app.config['MAIL_PASSWORD'] = "qmey woxk ombp hndf"
-    app.config['MAIL_DEFAULT_SENDER'] = "jesse.d.johnson.533@gmail.com"
+    app.config['MAIL_USERNAME'] = os.environ.get("MAIL_USERNAME")
+    app.config['MAIL_PASSWORD'] = os.environ.get("MAIL_PASSWORD")
+    app.config['MAIL_DEFAULT_SENDER'] = os.environ.get("MAIL_USERNAME")
     app.config['MAIL_DEBUG'] = False
     MAIL.init_app(app)
 
@@ -37,7 +37,6 @@ def send_email(contact_form):
 
             Message: {contact_form["message"]}
             """
-        
         MAIL.send(message)
     except Exception as e:
         print("ERROR - Failed to send email")

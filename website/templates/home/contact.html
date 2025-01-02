@@ -43,27 +43,20 @@
         request.onreadystatechange = function() {
             if (request.readyState === 4) {
                 if (request.status === 200) {
-                    var data = JSON.parse(request.response);
-                    console.log(data)
-                    if (data.success == 1) {
-                        document.getElementById("success").style.display = "block";
-                    }
-                    else {
-                        document.getElementById("error").style.display = "block";
-                    }
+                    document.getElementById("success").style.display = "block";
+                    document.getElementById("error").style.display = "none";
                 } else {
                     document.getElementById("error").style.display = "block";
+                    document.getElementById("success").style.display = "none";
                 }
             }
         };
-
         var data = {
             name: document.getElementById("name").value,
             email: document.getElementById("email").value,
             subject: document.getElementById("subject").value,
             message: document.getElementById("message").value
         };
-
         request.send(JSON.stringify(data));
     });
 </script>
