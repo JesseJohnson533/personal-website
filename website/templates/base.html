@@ -15,9 +15,9 @@
         />
     </head>
     <body>
-        <!--<header>
-            {% include "navbar.html" %}
-        </header> -->
+        <header>
+            {% block navbar %} {% endblock %}
+        </header>
         <main>
             {% block content %} {% endblock %}
         </main>
