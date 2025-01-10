@@ -6,34 +6,43 @@
     </div>
     <div class="nav flex-column p-1 home-animated-fade-in-3">
         <a class="nav-link" href="{{url_for('bp_home.about_me')}}">About Me</a>
-        <a class="nav-link" href="{{url_for('bp_home.portfolio')}}">Portfolio</a>
+        <a class="nav-link" href="{{url_for('bp_home.portfolio')}}">
+            Portfolio
+        </a>
         <a class="nav-link" href="{{url_for('bp_home.contact')}}">Contact</a>
     </div>
     <div class="p-3 external-links home-animated-fade-in-up">
         <a
-                href="https://github.com/JesseJohnson533"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="me-3"
-            >
-                <img
-                    src="{{url_for('static', filename='images/github_logo.png')}}"
-                    alt="GitHub"
-                />
+            href="https://github.com/JesseJohnson533"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="me-3"
+        >
+            <img
+                src="{{url_for('static', filename='images/github_logo.png')}}"
+                alt="GitHub"
+            />
         </a>
         <a
-                href="https://www.linkedin.com/in/jessejohnson533"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <img
-                    src="{{url_for('static', filename='images/linkedin_logo.png')}}"
-                    alt="LinkedIn"
-                />
+            href="https://www.linkedin.com/in/jessejohnson533"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <img
+                src="{{url_for('static', filename='images/linkedin_logo.png')}}"
+                alt="LinkedIn"
+            />
         </a>
     </div>
     <div class="p-2 external-links home-animated-fade-in-up">
-        <a class="btn btn-outline-light btn-sm" href="https://drive.google.com/file/d/1LVwEj8-ln1-RJRyXgb6QR495MaBl9rv9/view?usp=sharing" role="button" target="_blank">Resume</a>
+        <a
+            class="btn btn-outline-light btn-sm"
+            href="https://drive.google.com/file/d/1169rsZ8ifNvlMnyro4qGK21SkVyLFnwC/view?usp=sharing"
+            role="button"
+            target="_blank"
+        >
+            Resume
+        </a>
     </div>
 </div>
 {% endblock %}

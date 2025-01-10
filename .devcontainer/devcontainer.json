@@ -24,7 +24,8 @@
                 "njpwerner.autodocstring",
                 "batisteo.vscode-django",
                 "GitHub.copilot",
-                "glenn2223.live-sass"
+                "glenn2223.live-sass",
+                "asvetliakov.vscode-neovim"
             ]
         }
     }

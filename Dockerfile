@@ -1,7 +1,6 @@
 # Use the official Python image with Alpine as the base
 FROM python:3.13-alpine3.20
 
-# Install necessary dependencies
 RUN apk add --no-cache \
     build-base \
     xz \
@@ -10,7 +9,6 @@ RUN apk add --no-cache \
     git \
     gnupg
 
-# Install the latest version of pip
 RUN python -m pip install --upgrade pip
 
 # Copy
@@ -23,5 +21,4 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 RUN npm install
 
-# Run flask on debug mode and port 5000
 CMD ["flask", "run", "--debug"]
