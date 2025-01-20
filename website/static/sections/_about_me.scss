@@ -3,6 +3,7 @@
 .about-me {
     margin-bottom: 1rem;
     color: white;
+    text-align: left;
 
     &--title {
         display: inline-block;
@@ -12,10 +13,8 @@
         font-size: 1rem;
         display: block;
     }
-}
-
-.headshot {
-    display: block;
-    max-width: 100%;
-    height: auto;
+    &--headshot {
+        width: 80%;
+        height: auto;
+    }
 }

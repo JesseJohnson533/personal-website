@@ -1,9 +1,7 @@
 @use "custom";
 
 @use '../components/animations' as *;
-@use '../components/buttons' as *;
 @use '../components/mixins' as *;
-@use '../components/typography' as *;
 
 @use '../sections/footer' as *;
 @use '../sections/intro' as *;
@@ -16,11 +14,3 @@
 body {
     @include mixin-background;
 }
-
-//main {
-    //width: auto;
-    //height: 95vh;
-    //display: flex;
-    //
-    //justify-content: center;
-//}

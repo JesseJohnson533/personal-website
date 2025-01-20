@@ -5,36 +5,34 @@
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid mt-5 p-3 w-75 mx-auto">
-    <div class="row align-items-center text-white">
-        <div class="col-md-6 about-me">
-            <h1 class="about-me--title">Hello!</h1>
-            <p class="about-me--description">
-                My name is Jesse Johnson. 
-                I am a dedicated and versatile professional with a passion for continuous growth. 
-                My technology career is complemented by a decade of restaurant experience, during which I honed invaluable soft skills such as communication, teamwork, and adaptability.
-            </p>
-            <p class="about-me--description">I am seeking my next opportunity to contribute my skills and grow within a dynamic team. My technical toolkit includes:
-            </p>
-            <ul class="about-me--description">
-                <li>Languages: Python, Java, C, Ruby, JavaScript, SQL, HTML, CSS, Kotlin, Lisp</li>
-                <li>Frameworks: Pytest, Selenium, Playwright, Locust, Flask, Ruby on Rails, Bootstrap</li>
-                <li>Platforms: Databricks, GCP, AWS, Heroku</li>
-                <li>Specialties: Software testing and automation</li>
-            </ul>
-            <p class="about-me--description">
-                If you are looking for a results-driven individual who combines technical expertise with strong interpersonal skills, I would love to connect and explore how I can add value to your team.
-            </p>
-        </div>
-        <div class="col-md-6 text-end">
-            <div>
-                <img
-                    class="rounded-circle img-thumbnail img-fluid headshot"
-                    src="{{url_for('static', filename='images/headshot.jpg')}}"
-                    alt="Jesse Johnson"
-                />
-            </div>
-        </div>
+<div class="container-fluid text-center mt-5 p-3 w-75 mx-auto">
+    <div class="row align-items-center about-me">
+      <div class="col-md-6">
+        <h1 class="about-me--title">Hello!</h1>
+        <p class="about-me--description">
+            My name is Jesse Johnson. 
+            I am a dedicated and versatile professional with a passion for continuous growth. 
+            My technology career is complemented by a decade of restaurant experience, during which I honed invaluable soft skills such as communication, teamwork, and adaptability.
+        </p>
+        <p class="about-me--description">I am seeking my next opportunity to contribute my skills and grow within a dynamic team. My technical toolkit includes:
+        </p>
+        <ul class="about-me--description">
+            <li>Languages: Python, Java, C, Ruby, JavaScript, SQL, HTML, CSS, Kotlin, Lisp</li>
+            <li>Frameworks: Pytest, Selenium, Playwright, Locust, Flask, Ruby on Rails, Bootstrap</li>
+            <li>Platforms: Databricks, GCP, AWS, Heroku</li>
+            <li>Specialties: Software testing and automation</li>
+        </ul>
+        <p class="about-me--description">
+            If you are looking for a results-driven individual who combines technical expertise with strong interpersonal skills, I would love to connect and explore how I can add value to your team.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img
+        class="rounded-circle img-thumbnail img-fluid about-me--headshot"
+        src="{{url_for('static', filename='images/headshot.jpg')}}"
+        alt="Jesse Johnson"
+        />
+      </div>
     </div>
 </div>
 {% endblock %}
