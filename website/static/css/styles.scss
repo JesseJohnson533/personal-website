@@ -1,14 +1,14 @@
 @use "custom";
 
-@use '../components/animations' as *;
-@use '../components/mixins' as *;
+@use "../components/animations" as *;
+@use "../components/mixins" as *;
 
-@use '../sections/footer' as *;
-@use '../sections/intro' as *;
-@use '../sections/navbar' as *;
-@use '../sections/portfolio' as *;
-@use '../sections/contact' as *;
-@use '../sections/about_me' as *;
+@use "../sections/footer" as *;
+@use "../sections/intro" as *;
+@use "../sections/navbar" as *;
+@use "../sections/portfolio" as *;
+@use "../sections/contact" as *;
+@use "../sections/about_me" as *;
 
 // General
 body {

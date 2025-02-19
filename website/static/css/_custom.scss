@@ -1,5 +1,5 @@
 // White and grey
-$white:    #fff;
+$white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
@@ -9,15 +9,14 @@ $gray-600: #6c757d;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
-$black:    #000;
+$black: #000;
 
 // Base colors
-$primary: #05204A;
+$primary: #05204a;
 $secondary: #ffffff;
 // background  2e294e
 
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
-
 
 // Nav & Navbar
 .nav-link {
@@ -27,5 +26,3 @@ $secondary: #ffffff;
 .nav-link:hover {
     color: $secondary;
 }
-
-

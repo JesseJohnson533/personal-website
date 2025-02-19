@@ -12086,6 +12086,11 @@ textarea.form-control-lg {
   justify-self: center;
 }
 
+.card {
+  border-bottom: 1px;
+  border-color: black;
+}
+
 .about-me {
   margin-bottom: 1rem;
   color: white;

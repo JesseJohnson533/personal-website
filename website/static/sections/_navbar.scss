@@ -1,7 +1,6 @@
 @use "../css/custom" as *;
 @use "../components/mixins" as *;
 
-
 .menu {
     @include mixin-background;
     li {
